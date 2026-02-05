@@ -31,5 +31,4 @@ Provides a complete solution for managing authors, books, members, and borrowing
 
 ```bash
 git clone <repository-url>
-cd clients
 npm install
