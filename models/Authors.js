@@ -2,10 +2,6 @@ import { Model, DataTypes } from 'sequelize';
 import sequelize from '../db.sequelize.mysql.js';
 
 class Authors extends Model {
-  static associate(models) {
-    Authors.hasMany(models.Books, { foreignKey: 'authorId' });
-  }
-  
   getFullName() {
     return `${this.firstName} ${this.lastName}`;
   }
